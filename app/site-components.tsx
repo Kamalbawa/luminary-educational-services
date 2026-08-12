@@ -1,0 +1,17 @@
+import Link from "next/link";
+
+export function Brand() {
+  return <Link href="/" className="brand" aria-label="Luminary Educational Services home"><span className="brand-mark">✦</span><span className="brand-copy"><strong>LUMINARY</strong><small>Educational Services</small></span></Link>;
+}
+
+export function Header() {
+  return <header className="site-header"><div className="shell header-inner"><Brand /><nav className="desktop-nav" aria-label="Primary navigation"><Link href="/">Home</Link><Link href="/#about">About</Link><Link href="/programs-services/#degree-programs">Degree Programs</Link><Link href="/programs-services/#iti-trades">ITI Trades</Link><Link href="/programs-services/#wes-evaluation">WES Evaluation</Link></nav><a className="header-cta" href="/#enquiry">Book consultation <span>↗</span></a><details className="mobile-menu"><summary aria-label="Open navigation"><span /><span /></summary><nav><Link href="/">Home</Link><Link href="/#about">About</Link><Link href="/programs-services/">Programs & Services</Link><Link href="/#enquiry">Contact</Link></nav></details></div></header>;
+}
+
+export function LeadForm() {
+  return <section className="section contact-section" id="enquiry"><div className="shell contact-grid"><div className="contact-copy"><p className="eyebrow light">Let’s talk</p><h2>Find the path that fits your goal.</h2><p>Tell us what you are planning. Our team will contact you to understand your needs and explain the next step.</p><div className="contact-list"><a href="tel:+919914099906"><span>Call</span><strong>+91 99140 99906</strong></a><a href="tel:+917053732000"><span>Alternate</span><strong>+91 70537 32000</strong></a><a href="mailto:luminaryedu@zohomail.com"><span>Email</span><strong>luminaryedu@zohomail.com</strong></a></div></div><form className="lead-form"><div className="form-row"><label>Full name<input type="text" name="name" placeholder="Your name" /></label><label>Phone number<input type="tel" name="phone" placeholder="+91 00000 00000" /></label></div><label>I am interested in<select name="interest" defaultValue=""><option value="" disabled>Select a pathway</option><option>Degree Admission</option><option>ITI Skill Course</option><option>WES Evaluation Assistance</option></select></label><label>Your question <textarea name="message" placeholder="Tell us a little about your goal" rows={4} /></label><button className="button button-primary form-submit" type="submit">Request a callback <span>↗</span></button><small>By submitting, you agree to be contacted about your enquiry.</small></form></div></section>;
+}
+
+export function Footer() {
+  return <><footer className="site-footer"><div className="shell footer-grid"><div><Brand /><p>Guidance for education, practical skills and global credential journeys.</p></div><div><h3>Explore</h3><Link href="/programs-services/#degree-programs">Degree Programs</Link><Link href="/programs-services/#iti-trades">ITI Trades</Link><Link href="/programs-services/#wes-evaluation">WES Assistance</Link></div><div><h3>Connect</h3><a href="tel:+919914099906">+91 99140 99906</a><a href="mailto:luminaryedu@zohomail.com">luminaryedu@zohomail.com</a><a href="/#enquiry">Send an enquiry</a></div></div><div className="shell footer-bottom"><span>© 2026 Luminary Educational Services</span><span>By Manpreet Saini</span></div></footer><div className="mobile-actions"><a href="tel:+919914099906">Call now</a><a href="https://wa.me/919914099906">WhatsApp</a></div></>;
+}
