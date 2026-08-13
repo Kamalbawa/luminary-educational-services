@@ -12,7 +12,11 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(origin),
     title: { default: "Luminary Educational Services Punjab", template: "%s | Luminary Punjab" },
     description: "Education guidance for students across Punjab: degree admissions, nursing and skill courses, ITI courses and WES evaluation assistance.",
-    icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+    icons: {
+      icon: [{ url: "/luminary-logo-source.webp?v=2", type: "image/webp" }],
+      shortcut: "/luminary-logo-source.webp?v=2",
+      apple: [{ url: "/luminary-logo-source.webp?v=2", type: "image/webp" }],
+    },
     openGraph: {
       type: "website",
       title: "Luminary Educational Services Punjab",
