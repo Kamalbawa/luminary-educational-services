@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { MobileNavigation } from "./mobile-navigation";
 
 export function Brand() {
   return <Link href="/" className="brand" aria-label="Luminary Educational Services home"><span className="brand-logo-full"><img src="/luminary-logo-source.webp" alt="" width={261} height={400} decoding="async" /></span><span className="brand-copy"><strong>LUMINARY</strong><small>Educational Services</small></span></Link>;
 }
 
 export function Header() {
-  return <header className="site-header"><div className="shell header-inner"><Brand /><nav className="desktop-nav" aria-label="Primary navigation"><Link href="/">Home</Link><Link href="/#about">About</Link><Link href="/courses/">Courses</Link><Link href="/#wes-evaluation">WES Evaluation</Link><Link href="/#enquiry">Contact</Link></nav><a className="header-cta" href="/#enquiry">Book consultation <span>↗</span></a><details className="mobile-menu"><summary aria-label="Open navigation"><span /><span /></summary><nav><Link href="/">Home</Link><Link href="/#about">About</Link><Link href="/courses/">Courses</Link><Link href="/#wes-evaluation">WES Evaluation</Link><Link href="/#enquiry">Contact</Link></nav></details></div></header>;
+  return <header className="site-header"><div className="shell header-inner"><Brand /><nav className="desktop-nav" aria-label="Primary navigation"><Link href="/">Home</Link><Link href="/#about">About</Link><Link href="/courses/">Courses</Link><Link href="/#wes-evaluation">WES Evaluation</Link><Link href="/#enquiry">Contact</Link></nav><a className="header-cta" href="/#enquiry">Book consultation <span>↗</span></a><MobileNavigation /></div></header>;
 }
 
 export function LeadForm() {
