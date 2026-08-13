@@ -38,3 +38,7 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+
+# local development logs and legacy WordPress transfer packages
+/next-local.*.log
+/wordpress/
