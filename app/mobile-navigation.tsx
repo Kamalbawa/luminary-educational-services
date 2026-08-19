@@ -43,6 +43,7 @@ export function MobileNavigation() {
               <p>Personal education guidance across Punjab</p>
               <div><span>ਪੰਜਾਬੀ</span><span>English</span></div>
               <a href="tel:+917053732000">Call +91 70537 32000 <b>→</b></a>
+              <a href="tel:+919914099906">Call +91 99140 99906 <b>→</b></a>
             </div>
           </motion.div>
         </motion.div>

@@ -38,7 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@type": "EducationalOrganization",
     name: "Luminary Educational Services",
     areaServed: "Punjab, India",
-    telephone: "+91 70537 32000",
+    telephone: ["+91 70537 32000", "+91 99140 99906"],
     email: "luminaryedu@zohomail.com",
     founder: "Manpreet Saini",
   };
